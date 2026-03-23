@@ -67,3 +67,4 @@ This News App is licensed under the [MIT License](LICENSE). Feel free to use, mo
 ## Acknowledgements
 
 - This app utilizes the GNews public API for fetching news articles. Visit their website for more information: [GNews API](https://gnews.io/)
+"# News-Session" 
