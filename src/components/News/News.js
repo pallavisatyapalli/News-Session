@@ -25,7 +25,10 @@ function News(props) {
 
   const updatenews = async () => {
     try {
-      const response = await axios.get(endpointPath(country, category));
+      //const response = await axios.get(endpointPath(country, category));
+      const response = await axios.get(
+  //`/api/news?country=${country}&category=${category}`
+    );
       setLoading(true);
       const parsedData = response.data;
       setArticles(parsedData.articles);
@@ -120,7 +123,10 @@ function News(props) {
       setLoading(true);
 
       // ✅ CALL YOUR BACKEND (NOT GNEWS DIRECTLY)
-      const response = await axios.get("/api/news");
+      //const response = await axios.get("/api/news");
+      const response = await axios.get(
+       `/api/news?country=${country}&category=${category}`
+    );
 
       const parsedData = response.data;
 
